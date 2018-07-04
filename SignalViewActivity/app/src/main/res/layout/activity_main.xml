@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yuanting.signalviewactivity.MainActivity">
+
+    <com.example.yuanting.signalviewactivity.view.SignalView1
+        android:id="@+id/signalView1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        custom:signalCount="5"
+        custom:signalColor="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <com.example.yuanting.signalviewactivity.view.SignalView1
+        android:id="@+id/signalView2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/signalView4"
+        android:layout_marginStart="50dp"
+        android:layout_toEndOf="@+id/signalView1"
+        custom:signalColor="@color/color_green"
+        custom:signalCount="4" />
+
+    <com.example.yuanting.signalviewactivity.view.SignalView
+        android:id="@+id/signalView3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/signalView1"
+        android:layout_marginStart="21dp"
+        custom:signalColor="@color/colorAccent"
+        custom:signalCount="3" />
+
+    <com.example.yuanting.signalviewactivity.view.SignalView
+        android:id="@+id/signalView4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/signalView3"
+        android:layout_alignStart="@+id/signalView2"
+        custom:signalColor="@color/color_green"
+        custom:signalCount="4" />
+
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SignalView">
+        <!--总柱子数-->
+        <attr name="signalCount" format="integer" />
+        <!--柱子颜色-->
+        <attr name="signalColor" format="color" />
+    </declare-styleable>
+</resources>
